@@ -10,10 +10,10 @@
 #include <string.h>
 #include <time.h>
 
-#define    LED1 18    
-#define    LED2 23
-#define    LED3 24     
-#define    LED4 25     
+#define LED1 18    
+#define LED2 23
+#define LED3 24     
+#define LED4 25     
 
 #define BUTTON1 22
 #define BUTTON2 27
