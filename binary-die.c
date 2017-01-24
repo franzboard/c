@@ -19,7 +19,7 @@
 #define BUTTON2 27
 #define BUTTON3 17
 
-#define TBOUNCE 1000
+#define TBOUNCE 200
 
 unsigned int* int2hex(unsigned int x);
 void writeDisplay(unsigned int val);
@@ -96,7 +96,8 @@ int main(void)
     wiringPiISR (BUTTON3, INT_EDGE_FALLING, &myInterrupt);
     srand(time(NULL));
     clearDisplay();
-    for(;;);
+    for(;;)
+	delay(100);
     return 0;
 }
 
